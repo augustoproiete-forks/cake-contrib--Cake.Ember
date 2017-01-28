@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+	<channel>
+		<title />
+		<link>http://cake-contrib.github.io/Cake.Ember</link>
+		<description />
+		<copyright>2017</copyright>
+		<pubDate>Sat, 28 Jan 2017 22:40:51 GMT</pubDate>
+		<lastBuildDate>Sat, 28 Jan 2017 22:40:51 GMT</lastBuildDate>
+		<item>
+			<title>New Release - 0.1.0</title>
+			<link>http://cake-contrib.github.io/Cake.Ember/blog/new-release-0.1.0</link>
+			<description>&lt;p&gt;Very happy to announce the initial release of the Cake.Ember addin for &lt;a href="http://cakebuild.net/"&gt;Cake&lt;/a&gt;.&lt;/p&gt;</description>
+			<author>gep13</author>
+			<guid>http://cake-contrib.github.io/Cake.Ember/blog/new-release-0.1.0</guid>
+			<pubDate>Mon, 01 Jan 0001 00:00:00 GMT</pubDate>
+		</item>
+	</channel>
+</rss>
