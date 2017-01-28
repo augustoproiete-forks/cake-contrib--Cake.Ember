@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <id>Cake.Ember</id>
+    <version>0.0.0</version>
+    <authors>gep13</authors>
+    <owners>gep13, cake-contrib</owners>
+    <description>Cake Ember AddIn.</description>
+    <summary>Cake AddIn that extends Cake with ability to run the Ember CLI.</summary>
+    <licenseUrl>https://github.com/cake-contrib/Cake.Ember/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/cake-contrib/Cake.Ember/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <copyright>Copyright (c) Cake Contributions 2016 - Present</copyright>
+    <tags>Cake, Script, Build, Ember</tags>
+  </metadata>
+  <files>
+    <file src="Cake.Ember.dll" target="lib\net45" />
+    <file src="Cake.Ember.pdb" target="lib\net45" />
+    <file src="Cake.Ember.xml" target="lib\net45" />
+  </files>
+</package>
