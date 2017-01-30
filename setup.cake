@@ -8,10 +8,7 @@ BuildParameters.SetParameters(context: Context,
                             title: "Cake.Ember",
                             repositoryOwner: "cake-contrib",
                             repositoryName: "Cake.Ember",
-                            appVeyorAccountName: "cakecontrib",
-                            webHost: "cake-contrib.github.io",
-                            webLinkRoot: "Cake.Ember",
-                            webBaseEditUrl: "https://github.com/cake-contrib/Cake.Ember/tree/develop/docs/input/");
+                            appVeyorAccountName: "cakecontrib");
 
 BuildParameters.PrintParamters(Context);
 
