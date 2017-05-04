@@ -34,14 +34,6 @@ var searchModule = function() {
 
     a({
         id:0,
-        title:"EmberArgumentBuilder",
-        content:"EmberArgumentBuilder",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:1,
         title:"EmberBuildRunner",
         content:"EmberBuildRunner",
         description:'',
@@ -49,15 +41,7 @@ var searchModule = function() {
     });
 
     a({
-        id:2,
-        title:"EmberServeRunner",
-        content:"EmberServeRunner",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:3,
+        id:1,
         title:"EmberTool",
         content:"EmberTool",
         description:'',
@@ -65,23 +49,7 @@ var searchModule = function() {
     });
 
     a({
-        id:4,
-        title:"EmberSettings",
-        content:"EmberSettings",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:5,
-        title:"EmberBuildSettings",
-        content:"EmberBuildSettings",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:6,
+        id:2,
         title:"EmberServeSettings",
         content:"EmberServeSettings",
         description:'',
@@ -89,28 +57,48 @@ var searchModule = function() {
     });
 
     a({
-        id:7,
+        id:3,
+        title:"EmberArgumentBuilder",
+        content:"EmberArgumentBuilder",
+        description:'',
+        tags:''
+    });
+
+    a({
+        id:4,
         title:"EmberAliases",
         content:"EmberAliases",
         description:'',
         tags:''
     });
 
-    y({
-        url:'/Cake.Ember/Cake.Ember/api/Cake.Ember/EmberArgumentBuilder_1',
-        title:"EmberArgumentBuilder<T>",
-        description:""
+    a({
+        id:5,
+        title:"EmberServeRunner",
+        content:"EmberServeRunner",
+        description:'',
+        tags:''
+    });
+
+    a({
+        id:6,
+        title:"EmberBuildSettings",
+        content:"EmberBuildSettings",
+        description:'',
+        tags:''
+    });
+
+    a({
+        id:7,
+        title:"EmberSettings",
+        content:"EmberSettings",
+        description:'',
+        tags:''
     });
 
     y({
         url:'/Cake.Ember/Cake.Ember/api/Cake.Ember.Build/EmberBuildRunner',
         title:"EmberBuildRunner",
-        description:""
-    });
-
-    y({
-        url:'/Cake.Ember/Cake.Ember/api/Cake.Ember.Serve/EmberServeRunner',
-        title:"EmberServeRunner",
         description:""
     });
 
@@ -121,8 +109,26 @@ var searchModule = function() {
     });
 
     y({
-        url:'/Cake.Ember/Cake.Ember/api/Cake.Ember/EmberSettings',
-        title:"EmberSettings",
+        url:'/Cake.Ember/Cake.Ember/api/Cake.Ember.Serve/EmberServeSettings',
+        title:"EmberServeSettings",
+        description:""
+    });
+
+    y({
+        url:'/Cake.Ember/Cake.Ember/api/Cake.Ember/EmberArgumentBuilder_1',
+        title:"EmberArgumentBuilder<T>",
+        description:""
+    });
+
+    y({
+        url:'/Cake.Ember/Cake.Ember/api/Cake.Ember/EmberAliases',
+        title:"EmberAliases",
+        description:""
+    });
+
+    y({
+        url:'/Cake.Ember/Cake.Ember/api/Cake.Ember.Serve/EmberServeRunner',
+        title:"EmberServeRunner",
         description:""
     });
 
@@ -133,14 +139,8 @@ var searchModule = function() {
     });
 
     y({
-        url:'/Cake.Ember/Cake.Ember/api/Cake.Ember.Serve/EmberServeSettings',
-        title:"EmberServeSettings",
-        description:""
-    });
-
-    y({
-        url:'/Cake.Ember/Cake.Ember/api/Cake.Ember/EmberAliases',
-        title:"EmberAliases",
+        url:'/Cake.Ember/Cake.Ember/api/Cake.Ember/EmberSettings',
+        title:"EmberSettings",
         description:""
     });
 
