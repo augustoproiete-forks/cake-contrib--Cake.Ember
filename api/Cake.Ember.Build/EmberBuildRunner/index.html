@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/Cake.Ember/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/Cake.Ember/assets/img/favicon.ico" type="image/x-icon">
-        <title>Docs - API - global Namespace</title>
+        <title>Docs - API - EmberBuildRunner Class</title>
         <link href="/Cake.Ember/assets/css/mermaid.css" rel="stylesheet">
         <link href="/Cake.Ember/assets/css/highlight.css" rel="stylesheet">
         <link href="/Cake.Ember/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
@@ -72,7 +72,10 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
-	<div id="infobar-headings"><h6>On This Page</h6><p><a href="#Namespaces">Namespaces</a></p>
+	<div id="infobar-headings"><h6>On This Page</h6><p><a href="#Summary">Summary</a></p>
+<p><a href="#Syntax">Syntax</a></p>
+<p><a href="#Constructors">Constructors</a></p>
+<p><a href="#Methods">Methods</a></p>
 <hr class="infobar-hidden">
 </div>
 
@@ -123,19 +126,13 @@
 
                     <ul class="sidebar-menu">
                         
-	<li class="header">Namespaces</li>   
+			<li class="header">Namespace</li>
+		<li><a href="/Cake.Ember/api/Cake.Ember.Build">Cake<wbr>.Ember<wbr>.Build</a></li>
+		<li role="separator" class="divider"></li>
+			<li class="header">Class Types</li>
+				<li class="selected"><a href="/Cake.Ember/api/Cake.Ember.Build/EmberBuildRunner">EmberBuildRunner</a></li>
+				<li><a href="/Cake.Ember/api/Cake.Ember.Build/EmberBuildSettings">EmberBuildSettings</a></li>
 
-				<li class="treeview">
-				<a href="/Cake.Ember/api/Cake">Cake</a> <a href="#" class="expand"></a>
-				<ul class="treeview-menu">
-			
-				<li class="treeview">
-				<a href="/Cake.Ember/api/Cake.Ember">Cake<wbr>.Ember</a> <a href="#" class="expand"></a>
-				<ul class="treeview-menu">
-						<li><a href="/Cake.Ember/api/Cake.Ember.Build">Cake<wbr>.Ember<wbr>.Build</a></li>
-			<li><a href="/Cake.Ember/api/Cake.Ember.Serve">Cake<wbr>.Ember<wbr>.Serve</a></li>
-</ul></li></ul></li>			<li class=" selected"><a href="/Cake.Ember/api/global">global</a></li>
-      
 
                     </ul>
                 </section>                
@@ -148,31 +145,109 @@
 
 
 <section class="content-header">
-	<h1>global <small>Namespace</small></h1>
+	<h1>EmberBuildRunner <small>Class</small></h1>
 </section>
 <section class="content">
 	
 	
-	
+		<h1 id="Summary">Summary</h1>
+	<div class="lead">
+    The Ember Build Runner used to build Ember Applications.
+    </div>
 
-			<h1 id="Namespaces">Namespaces</h1>
+		<div class="panel panel-default">
+  			<div class="panel-body">
+				<div class="row">
+					<div class="col-md-6">
+						<dl class="dl-horizontal">		
+
+								<dt>Namespace</dt>
+								<dd><a href="/Cake.Ember/api/Cake.Ember.Build">Cake<wbr>.Ember<wbr>.Build</a></dd>
+											
+							
+								<dt>Base Types</dt>
+								<dd>
+									<ul class="list-unstyled">										
+											<li>Tool<wbr>&lt;<wbr>Ember<wbr>Build<wbr>Settings&gt;<wbr></li>								
+											<li>EmberTool<wbr>&lt;<wbr>Ember<wbr>Build<wbr>Settings&gt;<wbr></li>								
+									</ul>
+								</dd>				
+							
+							
+						</dl>
+					</div>		
+					<div class="col-md-6">
+						<div class="mermaid">
+							graph TD
+	Base0["EmberTool&lt;EmberBuildSettings&gt;"]--&gt;Type
+	Base1["Tool&lt;EmberBuildSettings&gt;"]--&gt;Base0
+	Type["EmberBuildRunner"]
+class Type type-node
+
+						</div>
+					</div>
+				</div>
+  			</div>
+		</div>
+
+	<h1 id="Syntax">Syntax</h1>
+	<pre><code>public sealed class EmberBuildRunner : EmberTool&lt;EmberBuildSettings&gt;</code></pre>
+
+
+
+
+
+
+			<h1 id="Constructors">Constructors</h1>
 			<div class="box">
 				<div class="box-body no-padding table-responsive">
 					<table class="table table-striped table-hover two-cols">
 						<thead>
 							<tr>
-								<th>Namespace</th>
+								<th>Name</th>
 									<th>Summary</th>
 							</tr>
 						</thead>
 							<tbody><tr>
-								<td><a href="/Cake.Ember/api/Cake">Cake</a></td>
-									<td></td>
+								<td><a href="/Cake.Ember/api/Cake.Ember.Build/EmberBuildRunner/3F209007">EmberBuildRunner<wbr>(IFileSystem, <wbr>ICakeEnvironment, <wbr>IProcessRunner, <wbr>IToolLocator)<wbr></a></td>
+									<td>
+    Initializes a new instance of the <code class="cs"><a href="/Cake.Ember/api/Cake.Ember.Build/EmberBuildRunner">EmberBuildRunner</a></code> class.
+    </td>
 							</tr>
 					</tbody></table>
 				</div>
 			</div>
 		
+
+
+
+
+			<h1 id="Methods">Methods</h1>
+			<div class="box">
+				<div class="box-body no-padding table-responsive">
+					<table class="table table-striped table-hover three-cols">
+						<thead>
+							<tr>
+								<th>Name</th>
+								<th>Value</th>
+								<th>Summary</th>
+							</tr>
+						</thead>
+							<tbody><tr>
+								<td><a href="/Cake.Ember/api/Cake.Ember.Build/EmberBuildRunner/226B8078">Build<wbr>(EmberBuildSettings)<wbr></a></td>
+								<td>void</td>
+								<td>
+									<div>
+    Builds an Ember Application using the specified settings.
+    </div>
+								</td>
+							</tr>
+					</tbody></table>
+				</div>
+			</div>
+		
+
+
 	
 </section>
                 

@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/Cake.Ember/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/Cake.Ember/assets/img/favicon.ico" type="image/x-icon">
-        <title>Docs - 0001</title>
+        <title>Docs - May, 2017</title>
         <link href="/Cake.Ember/assets/css/mermaid.css" rel="stylesheet">
         <link href="/Cake.Ember/assets/css/highlight.css" rel="stylesheet">
         <link href="/Cake.Ember/assets/css/bootstrap/bootstrap.css" rel="stylesheet" />
@@ -87,7 +87,7 @@
         <li><a href="/blog/release">Release</a></li>
     
     <li class="header"><i class="fa fa-calendar"></i> Archive</li>    
-        <li><a href="/blog/archive/0001/01">January, 0001</a></li>
+        <li class="selected"><a href="/blog/archive/2017/05">May, 2017</a></li>
     
     <li class="header"><i class="fa fa-user"></i> Authors</li>    
         <li><a href="/blog/author/gep13">gep13</a></li>
@@ -103,7 +103,7 @@
 
 
 	<section class="content-header">
-		<h1>0001</h1>
+		<h1>May, 2017</h1>
 	</section>
 	<section class="content">
 		
@@ -111,7 +111,7 @@
         <h2><a href="/Cake.Ember/blog/new-release-0.1.0">New Release - 0.1.0</a></h2>
 <dl class="dl-horizontal">
     <dt><i class="fa fa-calendar"></i> Published</dt>
-    <dd>01 January 0001</dd>
+    <dd>04 May 2017</dd>
         <dt><i class="fa fa-bookmark"></i> Category</dt>
         <dd><a href="/blog/release">Release</a></dd>
             <dt><i class="fa fa-user"></i> Author</dt>
@@ -146,7 +146,63 @@
             </footer>
         </div>
         <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
-        
+        <div class="github-button">
+    <a href="https://github.com/cake-contrib/Cake.Ember"><i class="fa fa-github"></i> GitHub</a>
+</div>
+<script>
+    ((window.gitter = {}).chat = {}).options = {
+        room: 'cake-contrib/Lobby'
+    };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
+<script type="text/javascript" src="/Cake.Ember/assets/js/anchor.min.js"></script>
+<script type="text/javascript" src="/Cake.Ember/assets/js/clipboard.min.js"></script>
+<script type="text/javascript">
+    anchors.options.placement = 'left';
+    anchors.add('#content > h1,h2,h3,h4');
+
+    var snippets = document.querySelectorAll("pre > code");
+    [].forEach.call(snippets, function(snippet) {
+        snippet.insertAdjacentHTML("beforebegin", "<button class='btn-copy' data-clipboard-snippet><img class='clippy' width=13 src='/Cake.Ember/assets/images/clippy.svg' alt='Copy to clipboard'></button>");
+    });
+    var clipboardSnippets = new Clipboard('[data-clipboard-snippet]', {
+        target: function(trigger) {
+            return trigger.nextElementSibling;
+        }
+    });
+    clipboardSnippets.on('success', function(e) {
+        e.clearSelection();
+        showTooltip(e.trigger, "Copied!");
+    });
+    clipboardSnippets.on('error', function(e) {
+        showTooltip(e.trigger, fallbackMessage(e.action));
+    });
+    var btns = document.querySelectorAll('.btn-copy');
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener('mouseleave', function(e) {
+            e.currentTarget.setAttribute('class', 'btn-copy');
+            e.currentTarget.removeAttribute('aria-label');
+        });
+    }    
+    function showTooltip(elem, msg) {
+        elem.setAttribute('class', 'btn-copy tooltipped tooltipped-s');
+        elem.setAttribute('aria-label', msg);
+    }
+    function fallbackMessage(action) {
+        var actionMsg = '';
+        var actionKey = (action === 'cut' ? 'X' : 'C');
+        if (/iPhone|iPad/i.test(navigator.userAgent)) {
+            actionMsg = 'No support :(';
+        } else if (/Mac/i.test(navigator.userAgent)) {
+            actionMsg = 'Press ⌘-' + actionKey + ' to ' + action;
+        } else {
+            actionMsg = 'Press Ctrl-' + actionKey + ' to ' + action;
+        }
+        return actionMsg;
+    }        
+</script>
+
         <script>           
             // Close the sidebar if we select an anchor link
             $(".main-sidebar a[href^='#']:not('.expand')").click(function(){
