@@ -69,7 +69,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Cake.Ember.ruleset" />
-    <None Include="ember.cake" />
+    <None Include="ember.cake">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

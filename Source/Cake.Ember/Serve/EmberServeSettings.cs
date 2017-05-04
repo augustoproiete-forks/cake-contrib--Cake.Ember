@@ -6,6 +6,17 @@
     public sealed class EmberServeSettings : EmberSettings
     {
         /// <summary>
+        /// Initializes a new instance of the <see cref="EmberServeSettings"/> class.
+        /// </summary>
+        public EmberServeSettings()
+        {
+            SecureProxy = true;
+            TransparentProxy = true;
+            LiveReload = true;
+            Ssl = false;
+        }
+
+        /// <summary>
         /// Gets or sets a value to use for the port to host website on.
         /// </summary>
         /// <remarks>Default is 4200.  Pass 0 to automatically pick an available port.</remarks>

@@ -6,6 +6,15 @@
     public sealed class EmberBuildSettings : EmberSettings
     {
         /// <summary>
+        /// Initializes a new instance of the <see cref="EmberBuildSettings"/> class.
+        /// </summary>
+        public EmberBuildSettings()
+        {
+            Watch = false;
+            SuppressSizes = false;
+        }
+
+        /// <summary>
         /// Gets or sets a value indicating whether to watch the input files.
         /// </summary>
         /// <remarks>Default is false</remarks>

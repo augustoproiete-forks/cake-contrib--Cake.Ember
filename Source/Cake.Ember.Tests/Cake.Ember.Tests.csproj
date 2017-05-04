@@ -68,10 +68,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EmberBuildRunnerTests.cs" />
+    <Compile Include="EmberFixture.cs" />
+    <Compile Include="EmberServeRunnerTests.cs" />
+    <Compile Include="Fixtures\EmberBuildRunnerFixture.cs" />
+    <Compile Include="Fixtures\EmberServeRunnerFixture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Cake.Ember\Cake.Ember.csproj">
+      <Project>{97fb369a-0c9c-45da-a862-e4bb010f5f71}</Project>
+      <Name>Cake.Ember</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

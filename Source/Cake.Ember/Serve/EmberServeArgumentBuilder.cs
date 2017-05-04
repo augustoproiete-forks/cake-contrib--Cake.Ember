@@ -48,19 +48,19 @@ namespace Cake.Ember.Serve
                 builder.Append(settings.Proxy);
             }
 
-            if (settings.SecureProxy)
+            if (settings.SecureProxy != true)
             {
-                builder.Append("--secure-proxy");
+                builder.Append("--secure-proxy=false");
             }
 
-            if (settings.TransparentProxy)
+            if (settings.TransparentProxy != true)
             {
-                builder.Append("--transparent-proxy");
+                builder.Append("--transparent-proxy=false");
             }
 
-            if (settings.LiveReload)
+            if (settings.LiveReload != true)
             {
-                builder.Append("--live-reload");
+                builder.Append("--live-reload=false");
             }
 
             if (!string.IsNullOrWhiteSpace(settings.LiveReloadHost))
@@ -81,7 +81,7 @@ namespace Cake.Ember.Serve
                 builder.Append(settings.LiveReloadPort.Value.ToString());
             }
 
-            if (settings.Ssl)
+            if (settings.Ssl != false)
             {
                 builder.Append("--ssl");
             }

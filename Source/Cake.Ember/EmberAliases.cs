@@ -17,6 +17,8 @@ namespace Cake.Ember
     /// </para>
     /// </summary>
     [CakeAliasCategory("Ember")]
+    [CakeNamespaceImport("Cake.Ember.Build")]
+    [CakeNamespaceImport("Cake.Ember.Serve")]
     public static class EmberAliases
     {
         /// <summary>

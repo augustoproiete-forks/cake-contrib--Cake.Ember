@@ -30,12 +30,12 @@ namespace Cake.Ember.Build
         {
             builder.Append("build");
 
-            if (settings.Watch)
+            if (settings.Watch != false)
             {
                 builder.Append("--watch");
             }
 
-            if (settings.SuppressSizes)
+            if (settings.SuppressSizes != false)
             {
                 builder.Append("--suppress-sizes");
             }
