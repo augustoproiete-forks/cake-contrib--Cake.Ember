@@ -34,24 +34,24 @@ var searchModule = function() {
 
     a({
         id:0,
-        title:"EmberBuildRunner",
-        content:"EmberBuildRunner",
+        title:"EmberServeSettings",
+        content:"EmberServeSettings",
         description:'',
         tags:''
     });
 
     a({
         id:1,
-        title:"EmberTool",
-        content:"EmberTool",
+        title:"EmberSettings",
+        content:"EmberSettings",
         description:'',
         tags:''
     });
 
     a({
         id:2,
-        title:"EmberServeSettings",
-        content:"EmberServeSettings",
+        title:"EmberAliases",
+        content:"EmberAliases",
         description:'',
         tags:''
     });
@@ -66,8 +66,8 @@ var searchModule = function() {
 
     a({
         id:4,
-        title:"EmberAliases",
-        content:"EmberAliases",
+        title:"EmberTool",
+        content:"EmberTool",
         description:'',
         tags:''
     });
@@ -90,27 +90,27 @@ var searchModule = function() {
 
     a({
         id:7,
-        title:"EmberSettings",
-        content:"EmberSettings",
+        title:"EmberBuildRunner",
+        content:"EmberBuildRunner",
         description:'',
         tags:''
     });
 
     y({
-        url:'/Cake.Ember/Cake.Ember/api/Cake.Ember.Build/EmberBuildRunner',
-        title:"EmberBuildRunner",
-        description:""
-    });
-
-    y({
-        url:'/Cake.Ember/Cake.Ember/api/Cake.Ember/EmberTool_1',
-        title:"EmberTool<TSettings>",
-        description:""
-    });
-
-    y({
         url:'/Cake.Ember/Cake.Ember/api/Cake.Ember.Serve/EmberServeSettings',
         title:"EmberServeSettings",
+        description:""
+    });
+
+    y({
+        url:'/Cake.Ember/Cake.Ember/api/Cake.Ember/EmberSettings',
+        title:"EmberSettings",
+        description:""
+    });
+
+    y({
+        url:'/Cake.Ember/Cake.Ember/api/Cake.Ember/EmberAliases',
+        title:"EmberAliases",
         description:""
     });
 
@@ -121,8 +121,8 @@ var searchModule = function() {
     });
 
     y({
-        url:'/Cake.Ember/Cake.Ember/api/Cake.Ember/EmberAliases',
-        title:"EmberAliases",
+        url:'/Cake.Ember/Cake.Ember/api/Cake.Ember/EmberTool_1',
+        title:"EmberTool<TSettings>",
         description:""
     });
 
@@ -139,8 +139,8 @@ var searchModule = function() {
     });
 
     y({
-        url:'/Cake.Ember/Cake.Ember/api/Cake.Ember/EmberSettings',
-        title:"EmberSettings",
+        url:'/Cake.Ember/Cake.Ember/api/Cake.Ember.Build/EmberBuildRunner',
+        title:"EmberBuildRunner",
         description:""
     });
 
