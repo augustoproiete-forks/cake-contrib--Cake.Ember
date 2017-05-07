@@ -40,7 +40,7 @@ namespace Cake.Ember.Serve
                 throw new ArgumentNullException(nameof(settings));
             }
 
-            RunGem(settings, new EmberServeArgumentBuilder(_environment, settings));
+            RunEmber(settings, new EmberServeArgumentBuilder(_environment, settings));
         }
     }
 }
