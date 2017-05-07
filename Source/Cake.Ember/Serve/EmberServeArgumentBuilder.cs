@@ -4,7 +4,7 @@ using Cake.Core.IO;
 namespace Cake.Ember.Serve
 {
     /// <summary>
-    /// The Argument Builder for the Build method of the Gem CLI.
+    /// The Argument Builder for the Serve method of the Ember CLI.
     /// </summary>
     internal sealed class EmberServeArgumentBuilder : EmberArgumentBuilder<EmberServeSettings>
     {
