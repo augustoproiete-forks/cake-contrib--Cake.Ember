@@ -52,7 +52,7 @@ namespace Cake.Ember
         /// <typeparam name="TBuilder">The Ember argument builder.</typeparam>
         /// <param name="settings">The settings.</param>
         /// <param name="builder">The builder.</param>
-        protected void RunGem<TBuilder>(TSettings settings, TBuilder builder)
+        protected void RunEmber<TBuilder>(TSettings settings, TBuilder builder)
             where TBuilder : EmberArgumentBuilder<TSettings>
         {
             Run(settings, builder.GetArguments());
