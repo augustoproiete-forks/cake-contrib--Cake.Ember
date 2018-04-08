@@ -20,10 +20,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <CodeAnalysisDictionary Include="CustomDictionary.xml" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Cake.Core" Version="0.26.0" />
   </ItemGroup>
 
