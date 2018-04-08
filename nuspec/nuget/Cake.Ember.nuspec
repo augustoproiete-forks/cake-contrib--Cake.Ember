@@ -15,8 +15,10 @@
     <tags>Cake, Script, Build, Ember</tags>
   </metadata>
   <files>
-    <file src="Cake.Ember.dll" target="lib\net45" />
-    <file src="Cake.Ember.pdb" target="lib\net45" />
-    <file src="Cake.Ember.xml" target="lib\net45" />
+    <file src="net46\Cake.Ember.dll" target="lib\net46" />
+    <file src="net46\Cake.Ember.pdb" target="lib\net46" />
+    <file src="net46\Cake.Ember.xml" target="lib\net46" />
+    <file src="netstandard2.0\Cake.Ember.dll" target="lib/netstandard2.0" />
+    <file src="netstandard2.0\Cake.Ember.pdb" target="lib/netstandard2.0" />
   </files>
 </package>
