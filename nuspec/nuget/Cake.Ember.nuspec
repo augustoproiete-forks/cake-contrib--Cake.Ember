@@ -8,7 +8,7 @@
     <description>Cake Ember AddIn.</description>
     <summary>Cake AddIn that extends Cake with ability to run the Ember CLI.</summary>
     <license type="expression">MIT</license>
-    <repository type="git" url="https://github.com/cake-contrib/Cake.Ember"/>
+    <repository type="git" url="https://github.com/cake-contrib/Cake.Ember.git"/>
     <projectUrl>https://github.com/cake-contrib/Cake.Ember/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/cake-contrib/graphics/png/cake-contrib-medium.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
