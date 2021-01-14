@@ -1,147 +1,164 @@
 
-var camelCaseTokenizer = function (obj) {
+var camelCaseTokenizer = function (builder) {
+
+  var pipelineFunction = function (token) {
     var previous = '';
-    return obj.toString().trim().split(/[\s\-]+|(?=[A-Z])/).reduce(function(acc, cur) {
-        var current = cur.toLowerCase();
-        if(acc.length === 0) {
-            previous = current;
-            return acc.concat(current);
-        }
-        previous = previous.concat(current);
-        return acc.concat([current, previous]);
+    // split camelCaseString to on each word and combined words
+    // e.g. camelCaseTokenizer -> ['camel', 'case', 'camelcase', 'tokenizer', 'camelcasetokenizer']
+    var tokenStrings = token.toString().trim().split(/[\s\-]+|(?=[A-Z])/).reduce(function(acc, cur) {
+      var current = cur.toLowerCase();
+      if (acc.length === 0) {
+        previous = current;
+        return acc.concat(current);
+      }
+      previous = previous.concat(current);
+      return acc.concat([current, previous]);
     }, []);
+
+    // return token for each string
+    // will copy any metadata on input token
+    return tokenStrings.map(function(tokenString) {
+      return token.clone(function(str) {
+        return tokenString;
+      })
+    });
+  }
+
+  lunr.Pipeline.registerFunction(pipelineFunction, 'camelCaseTokenizer')
+
+  builder.pipeline.before(lunr.stemmer, pipelineFunction)
 }
-lunr.tokenizer.registerFunction(camelCaseTokenizer, 'camelCaseTokenizer')
 var searchModule = function() {
+    var documents = [];
     var idMap = [];
-    function y(e) { 
-        idMap.push(e); 
+    function a(a,b) { 
+        documents.push(a);
+        idMap.push(b); 
     }
+
+    a(
+        {
+            id:0,
+            title:"EmberTool",
+            content:"EmberTool",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Cake.Ember/api/Cake.Ember/EmberTool_1',
+            title:"EmberTool<TSettings>",
+            description:""
+        }
+    );
+    a(
+        {
+            id:1,
+            title:"EmberAliases",
+            content:"EmberAliases",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Cake.Ember/api/Cake.Ember/EmberAliases',
+            title:"EmberAliases",
+            description:""
+        }
+    );
+    a(
+        {
+            id:2,
+            title:"EmberSettings",
+            content:"EmberSettings",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Cake.Ember/api/Cake.Ember/EmberSettings',
+            title:"EmberSettings",
+            description:""
+        }
+    );
+    a(
+        {
+            id:3,
+            title:"EmberBuildRunner",
+            content:"EmberBuildRunner",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Cake.Ember/api/Cake.Ember.Build/EmberBuildRunner',
+            title:"EmberBuildRunner",
+            description:""
+        }
+    );
+    a(
+        {
+            id:4,
+            title:"EmberServeRunner",
+            content:"EmberServeRunner",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Cake.Ember/api/Cake.Ember.Serve/EmberServeRunner',
+            title:"EmberServeRunner",
+            description:""
+        }
+    );
+    a(
+        {
+            id:5,
+            title:"EmberArgumentBuilder",
+            content:"EmberArgumentBuilder",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Cake.Ember/api/Cake.Ember/EmberArgumentBuilder_1',
+            title:"EmberArgumentBuilder<T>",
+            description:""
+        }
+    );
+    a(
+        {
+            id:6,
+            title:"EmberBuildSettings",
+            content:"EmberBuildSettings",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Cake.Ember/api/Cake.Ember.Build/EmberBuildSettings',
+            title:"EmberBuildSettings",
+            description:""
+        }
+    );
+    a(
+        {
+            id:7,
+            title:"EmberServeSettings",
+            content:"EmberServeSettings",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Cake.Ember/api/Cake.Ember.Serve/EmberServeSettings',
+            title:"EmberServeSettings",
+            description:""
+        }
+    );
     var idx = lunr(function() {
-        this.field('title', { boost: 10 });
+        this.field('title');
         this.field('content');
-        this.field('description', { boost: 5 });
-        this.field('tags', { boost: 50 });
+        this.field('description');
+        this.field('tags');
         this.ref('id');
-        this.tokenizer(camelCaseTokenizer);
+        this.use(camelCaseTokenizer);
 
         this.pipeline.remove(lunr.stopWordFilter);
         this.pipeline.remove(lunr.stemmer);
-    });
-    function a(e) { 
-        idx.add(e); 
-    }
-
-    a({
-        id:0,
-        title:"EmberServeSettings",
-        content:"EmberServeSettings",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:1,
-        title:"EmberBuildSettings",
-        content:"EmberBuildSettings",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:2,
-        title:"EmberSettings",
-        content:"EmberSettings",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:3,
-        title:"EmberBuildRunner",
-        content:"EmberBuildRunner",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:4,
-        title:"EmberTool",
-        content:"EmberTool",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:5,
-        title:"EmberAliases",
-        content:"EmberAliases",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:6,
-        title:"EmberServeRunner",
-        content:"EmberServeRunner",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:7,
-        title:"EmberArgumentBuilder",
-        content:"EmberArgumentBuilder",
-        description:'',
-        tags:''
-    });
-
-    y({
-        url:'/Cake.Ember/Cake.Ember/api/Cake.Ember.Serve/EmberServeSettings',
-        title:"EmberServeSettings",
-        description:""
-    });
-
-    y({
-        url:'/Cake.Ember/Cake.Ember/api/Cake.Ember.Build/EmberBuildSettings',
-        title:"EmberBuildSettings",
-        description:""
-    });
-
-    y({
-        url:'/Cake.Ember/Cake.Ember/api/Cake.Ember/EmberSettings',
-        title:"EmberSettings",
-        description:""
-    });
-
-    y({
-        url:'/Cake.Ember/Cake.Ember/api/Cake.Ember.Build/EmberBuildRunner',
-        title:"EmberBuildRunner",
-        description:""
-    });
-
-    y({
-        url:'/Cake.Ember/Cake.Ember/api/Cake.Ember/EmberTool_1',
-        title:"EmberTool<TSettings>",
-        description:""
-    });
-
-    y({
-        url:'/Cake.Ember/Cake.Ember/api/Cake.Ember/EmberAliases',
-        title:"EmberAliases",
-        description:""
-    });
-
-    y({
-        url:'/Cake.Ember/Cake.Ember/api/Cake.Ember.Serve/EmberServeRunner',
-        title:"EmberServeRunner",
-        description:""
-    });
-
-    y({
-        url:'/Cake.Ember/Cake.Ember/api/Cake.Ember/EmberArgumentBuilder_1',
-        title:"EmberArgumentBuilder<T>",
-        description:""
+        documents.forEach(function (doc) { this.add(doc) }, this)
     });
 
     return {

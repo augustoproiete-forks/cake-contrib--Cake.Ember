@@ -1,27 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
 	<channel>
-		<title />
+		<title>Cake.Ember</title>
 		<link>http://cake-contrib.github.io/Cake.Ember</link>
 		<description />
-		<copyright>2017</copyright>
-		<pubDate>Sun, 07 May 2017 21:41:38 GMT</pubDate>
-		<lastBuildDate>Sun, 07 May 2017 21:41:38 GMT</lastBuildDate>
-		<item>
-			<title>New Release - 0.1.1</title>
-			<link>http://cake-contrib.github.io/Cake.Ember/blog/new-release-0.1.1</link>
-			<description>&lt;p&gt;This is only a very minor release, in order to correct a small copy/pasta error.&lt;/p&gt;</description>
-			<author>gep13</author>
-			<guid>http://cake-contrib.github.io/Cake.Ember/blog/new-release-0.1.1</guid>
-			<pubDate>Sun, 07 May 2017 00:00:00 GMT</pubDate>
-		</item>
-		<item>
-			<title>New Release - 0.1.0</title>
-			<link>http://cake-contrib.github.io/Cake.Ember/blog/new-release-0.1.0</link>
-			<description>&lt;p&gt;Very happy to announce the initial release of the Cake.Ember addin for &lt;a href="http://cakebuild.net/"&gt;Cake&lt;/a&gt;.&lt;/p&gt;</description>
-			<author>gep13</author>
-			<guid>http://cake-contrib.github.io/Cake.Ember/blog/new-release-0.1.0</guid>
-			<pubDate>Thu, 04 May 2017 00:00:00 GMT</pubDate>
-		</item>
+		<copyright>2021</copyright>
+		<pubDate>Thu, 14 Jan 2021 20:00:22 GMT</pubDate>
+		<lastBuildDate>Thu, 14 Jan 2021 20:00:22 GMT</lastBuildDate>
 	</channel>
 </rss>

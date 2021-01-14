@@ -28,7 +28,7 @@ pre:hover .btn-copy {
   display: none;
   padding: 5px 8px;
   font: normal normal 11px/1.5 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
-  color: white;
+  color: #fff;
   text-align: center;
   text-decoration: none;
   text-shadow: none;
@@ -83,24 +83,6 @@ pre:hover .btn-copy {
 .bottom-footer {
   margin-bottom: 40px !important;
 }
-.gitter-open-chat-button {
-  background-color: #3c8dbc;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
-  letter-spacing: normal;
-  right: 90px;
-}
-.gitter-open-chat-button:focus,
-.gitter-open-chat-button:hover,
-.github-button:focus,
-.github-button:hover {
-  background-color: #4eabdd;
-  color: white;
-}
-.gitter-chat-embed {
-  top: 49px;
-  border-top: 1px solid black;
-  z-index: 10000;
-}
 .github-button {
   z-index: 100;
   position: fixed;
@@ -120,11 +102,11 @@ pre:hover .btn-copy {
   cursor: hand;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  color: white;
+  color: #fff;
 }
 .github-button a,
 .github-button a:active,
 .github-button a:hover,
 .github-button a:focus {
-  color: white;
+  color: #fff;
 }
